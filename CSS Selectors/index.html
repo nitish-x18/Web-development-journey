@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* universal selector--> */
+        *{
+            background-color: antiquewhite;
+        }
+        /* element selector */
+        p{
+            color: brown;
+        }
+        /* id selector */
+        #id_name{
+            background-color: aquamarine;
+        }
+        /* class selector */
+        .class_name{
+            color: blueviolet;
+        }
+        /* group selector */
+        a,p,span{
+            background-color: bisque;
+        }
+        /* child selector */
+        div > p{
+            background-color: rgb(193, 126, 44);
+        }
+        /* descendant selector */
+        div p{
+            color: black;
+        }
+        
+        /* Pseudo Selector  */
+        a:visited{
+            color: yellow
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:active{
+            background-color: red;
+        }
+
+        a:hover{
+            background-color: rgb(72, 72, 66);
+        }
+    </style>
+</head>
+<body>
+    <header id="id_name">
+        i am nitish yadav
+    </header>
+    <main class="class_name">
+        i am developer
+        <div>
+            <p>i am form bihar</p>
+        </div>
+    </main>
+    <footer>
+        <a href="https://www.google.com">go to google</a>
+        <a href="https://www.facebook.com">go to facebook</a>
+    </footer>
+</body>
+</html>
