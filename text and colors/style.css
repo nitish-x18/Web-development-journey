@@ -1,0 +1,16 @@
+h1 , h2{
+    /* text-align: center; */
+    text-decoration: underline;
+    text-decoration-color: hotpink ;
+    text-shadow: black;
+}
+h1{
+    text-indent: 700px;
+}
+
+p{
+    width: 150px;
+    border: 1px solid;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
