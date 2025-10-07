@@ -1,0 +1,39 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    background-color: brown;
+}
+
+.container{
+
+    width: 500px;
+    height: 350px;
+    background-color: hotpink;
+    display: flex;
+
+}
+
+@media only screen and (max-width: 290px){
+    .container{
+        background-color: brown;
+        flex-direction: column;
+
+    }
+}
+
+.box{
+    width: 300px;
+    height: 80px;
+}
+
+.box1{
+    background-color: antiquewhite;
+}
+
+.box2{
+    background-color: aqua;
+}
+
+.box3{
+    background-color: aquamarine;
+}
