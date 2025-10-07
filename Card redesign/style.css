@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+body {
+    background-color: gray;
+    padding: 50px;
+}
+
+.card {
+    height: 450px;
+    width: 300px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.image {
+    padding: 5px;
+}
+
+.image img {
+    border-radius: 15px;
+}
+
+.capsule{
+    /* margin: 4px; */
+    padding: 4px 6px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.capsule span{
+    border: 2px solid grey;
+    border-radius: 70px;
+    /* margin: 4px 5px; */
+    padding: 1px 8px;
+}
+
+.content{
+    padding: 1px 8px;
+    font-family: "Alan Sans", sans-serif;
+}
+
+.button{
+    text-align: center;
+    padding: 2px 16px;
+    margin: 2px;
+    
+}
+
+button{
+    border-radius: 15px;
+    background-color: rgb(214, 214, 235);
+    color: rgb(64, 64, 200);
+    border: none;
+    font-family: "Roboto Mono", monospace;
+}
+
+button:hover{
+    background-color: rgb(19, 92, 164);
+    color:azure
+}
+
+.content h2{
+    padding: 1px;
+    margin: 12px 1px;
+}
