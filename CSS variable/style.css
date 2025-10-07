@@ -1,0 +1,34 @@
+:root{
+    --color: rgb(151, 237, 151);
+    --secolor: rgb(210, 253, 210);
+    --defpad: 20px;
+    --deffont: 20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    padding: 20px;
+    padding: var(--defpad);
+    background-color: bisque;
+    background-color: var(--color);
+    font-size: var(--deffont);
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+div{
+    background-color: antiquewhite;
+    background-color: var(--secolor);
+}
