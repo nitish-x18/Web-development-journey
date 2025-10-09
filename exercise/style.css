@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 12px 0px;
+    background-color: rgb(2, 46, 2);
+    color: white;
+}
+
+ul li{
+    padding: 23px;
+}
+
+.body{
+    /* border: 2px solid black; */
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    background-color: rgb(141, 139, 138);
+}
+
+.box{
+    /* border: 2px solid black; */
+    width: 40%;
+    height: 60%;
+    margin: 120px;
+    background-color: rgb(221, 156, 109);
+}
+
+.bb{
+    /* border: 2px solid black; */
+    padding: 150px;
+    text-align: center;
+    background-color: rgb(189, 180, 168);
+}
+
+.footer{
+    /* border: 2px solid black; */
+    padding: 30px;
+    text-align: center;
+    background-color: antiquewhite;
+}
