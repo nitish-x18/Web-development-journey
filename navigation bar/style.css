@@ -1,57 +1,56 @@
 :root{
-    --navcol: rgb(140, 140, 245);
-    --maincolor: rgb(195, 195, 236);
-    --sidecolor: rgb(153, 153, 231);
+    --navcol: rgb(6, 6, 103);
+    --maincolor: rgb(235, 235, 245);
+    --sidecolor: rgb(176, 176, 246);
+    --bodycolor: rgb(249, 240, 240);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Bitcount+Prop+Single+Ink:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
+    font-family: "Bitcount Prop Single Ink", system-ui;
 }
 
-.nav{
-    margin: 0;
-    padding: 20px;
-    width: 100vw;
-    height: 40px;
-    background-color: rgb(74, 71, 71);
-    color: whitesmoke;
-    position: fixed;
-    top: 0;
-    background-color: var(--navcol);
+body{
+    background-color: var(--bodycolor);
 }
 
-ul{
+
+ul {
     display: flex;
     list-style: none;
-    padding: 1px;
-    margin: 0px;
+    padding: 12px 0px;
+    background-color: var(--navcol);
+    color: white;
+    font-weight: bold;
 }
 
-li{
-    padding: 10px 10px;
+ul li{
+    padding: 23px;
+}
+
+a{
+    text-decoration: none;
+    background-color: var(--navcol);
+    color: white;
 }
 
 .container{
     display: flex;
-}    
-
-.main{
-    background-color: rgb(207, 204, 204);
-    width: 80vw;
-    height: auto;
-    padding: 80px 20px;
-    background-color: var(--maincolor);
-    overflow: auto;
-    
 }
 
 .sidebar{
-    border: 2px solid black;
-    width: 20vw;
-    height: 200vh;
+    width: 30vw;
+    height: 100vh;
     overflow: auto;
-    /* padding-top: 80px;  */
-    padding: 80px 10px;
+    padding: 5px 10px;
     background-color: var(--sidecolor);
+}
+
+.main{
+    width: 80vw;
+    padding: 5px 10px;
+    background-color: var(--maincolor);
 }
