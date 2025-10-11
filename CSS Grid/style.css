@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    border: 1px solid black;
+    width: 100vw;
+    height: 80vh;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 40% auto;
+    justify-items: center;
+    align-items: center; */
+    /* justify-items: center;
+    align-items: center; */
+    grid-template-areas: "nav nav nav"
+                        "sidebar artical artical"
+                        "sidebar artical artical"
+                        "footer footer footer";
+
+}
+
+.box{
+    border: 1px solid black;
+    /* width: 50px;*/
+    /* height: 50px;   */
+    background-color: aqua;
+    
+}
+
+.box1{
+    grid-area: nav;
+}
+
+.box2{
+    grid-area: sidebar;
+}
+.box3{
+    grid-area: artical;
+}
+.box4{
+    grid-area: footer;
+}
