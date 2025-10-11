@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    border: 1px solid black;
+    display: flow-root;
+}
+
+.box{
+    border: 1px solid black;
+}
+
+.image{
+    float: left;
+}
+
+.box:nth-child(2){
+    background-color: antiquewhite;
+    clear: left;
+}
