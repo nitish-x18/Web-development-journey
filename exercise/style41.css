@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+}
+
+
+ul {
+    list-style: none;
+    display: flex;
+    /* gap: 12px; */
+    align-items: center;
+    padding-right: 200px;
+} 
+
+ul li{
+    padding: 32px;
+}
+
+.logo{
+    /* padding: 52px 20px; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 200px;
+    
+}
