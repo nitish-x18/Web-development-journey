@@ -25,7 +25,7 @@ console.log(typeof a, typeof b, typeof c, typeof d, typeof e, typeof f, typeof g
 //objects-->
 let o = {
     name: "nitish",
-    "job role": "developer",
+    job_role: "developer",
     id: 24011010282
 }
 
