@@ -1,0 +1,1 @@
+console.log("Hello this file is all about strings in the javascript...");
