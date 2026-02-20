@@ -4,6 +4,11 @@ let age = 9;
 let grace = 2;
 
 console.log(age + grace);
+console.log(age - grace);
+console.log(age * grace);
+console.log(age % grace);
+console.log(age / grace);
+console.log(age ** grace); //this gives the age power grace
 
 if((age + grace)>18){
     console.log("you can drive");
