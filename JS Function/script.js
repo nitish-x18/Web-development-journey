@@ -4,7 +4,7 @@ function hello(name, uni){
 }
 
 hello("nitish", "RBU");
-hello("vansh", "RBU");
+hello("vansh", "CU");
 
 function sum(a, b){
     return a + b;
