@@ -5,12 +5,12 @@ let a1 = [1,3,2];
 let a2 = [6,7,8];
 let a3 = [9,10,11];
 
-console.log(arr, typeof arr);
-console.log(arr.length);
-console.log(arr[2]);
+// console.log(arr, typeof arr);
+// console.log(arr.length);
+// console.log(arr[2]);
 
-console.log(arr.toString());
-console.log(arr.join(" And "));
+// console.log(arr.toString());
+// console.log(arr.join(" And "));
 
 arr.push(10);
 
@@ -23,7 +23,17 @@ arr.unshift("RCb");
 
 delete arr[1];
 
-console.log(a1.concat(a2,a3));
+//console.log(a1.concat(a2,a3));
 
 a1.sort();
-console.log(a1);
+//console.log(a1);
+
+let num = [1,2,3,4];
+
+// num.splice(1,3);
+// num.splice(1,3,22,333,4444);
+
+num.slice(2);
+
+num.reverse();
+console.log(num);
