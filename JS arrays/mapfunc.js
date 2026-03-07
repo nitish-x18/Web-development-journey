@@ -14,3 +14,20 @@ let newarrr  = arr.map(element => {
 });
 
 console.log(newarrr);
+
+//filter func-->
+const greaterthanfive = (e)=> {
+    if( e > 2 ){
+        return true;
+    }
+    return false;
+}
+
+console.log(arr.filter(greaterthanfive));
+
+
+//reduce func-->
+const red = (a ,b)=>{
+    return a*b;
+}
+console.log(arr.reduce(red));
