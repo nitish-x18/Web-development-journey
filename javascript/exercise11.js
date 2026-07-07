@@ -14,3 +14,15 @@ const facto = (a,b) => {
     return a * b;
 }
 console.log(arr.reduce(facto));
+
+//this is my logic--->
+
+function fact(numb){
+    let fac = 1;
+    for(let i=1;i<=numb;i++){
+        fac = fac * i;
+    }
+    return fac;
+}
+
+console.log(fact(2));
