@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM & BOM</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        .box1{
+            padding: 20px;
+            margin: 2px;
+            width: 150px;
+            border: 1px solid black;
+        }
+        .box{
+            padding: 20px;
+            margin: 2px;
+            width: 150px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
+    <div class="box1">
+        this is frist class.
+    </div>
     <div class="box">
         this is a Box.
     </div>
@@ -14,6 +34,7 @@
         console.log(document.title);
         console.log(document.body);
         document.body.style.backgroundColor = "yellow";
+        document.body.style.color = "blue";
     </script>
 </body>
 </html>
