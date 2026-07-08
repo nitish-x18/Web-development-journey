@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            gap: 2px;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            gap: 2px;
+            padding: 10px;
+            margin: 10px;
+            height: 50px;
+            width: 80px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--Given 5 boxes, assign a random color and a random background to each box using DOM conceots-->
+    <div class="container">
+        <div class="box">yoooo 1</div>
+        <div class="box">yoooo 2</div>
+        <div class="box">yoooo 3</div>
+        <div class="box">yoooo 4</div>
+        <div class="box">yoooo 5</div>
+    </div>
+
+    <script>
+        // let boxes = document.getElementsByClassName("box")
+        // console.log(boxes)
+
+        let boxes = document.querySelector(".container").children
+        console.log(boxes)
+
+        function getrandom(){
+            val2 = Math.ceil(0 + Math.random() * 255)
+            val1 = Math.ceil(0 + Math.random() * 255)
+            val3 = Math.ceil(0 + Math.random() * 255)
+
+            return `rgb(${val1}, ${val2}, ${val3})`
+        }
+
+        Array.from(boxes).forEach(e => {
+            e.style.backgroundColor = getrandom();
+            e.style.Color = getrandom();
+        });
+
+        // boxes[0].style.Color = "red";
+        // boxes[1].style.Color = "pink";
+        // boxes[2].style.Color = "purple";
+        // boxes[3].style.Color = "green";
+        // boxes[4].style.Color = "orange";
+
+        // document.querySelectorAll(".box").forEach(e => {
+        //     e.style.backgroundColor = "yellow"
+        // });
+
+//         document.body.firstElementChild.children
+// HTMLCollection(5) [div.box, div.box, div.box, div.box, div.box]0: div.box1: div.box2: div.box3: div.box4: div.boxlength: 5[[Prototype]]: HTMLCollection
+// e[1].style.backgroundColor = "purple"
+// VM2443:1 Uncaught ReferenceError: e is not defined
+//     at <anonymous>:1:1
+// (anonymous) @ VM2443:1
+// document.body.firstElementChild.firstElementChild.style.backgroundColor = "purple"
+// 'purple'
+// document.body.firstElementChild.firstElementChild.nextElementSibling.style.backgroundColor = "green"
+// 'green'
+// let e = document.body.firstElementChild.children
+// undefined
+// let e = document.body.firstElementChild.children
+// undefined
+// e[2].style.backgroundColor = "pink"
+// 'pink'
+// document.body.firstElementChild.children[3].style.backgroundColor
+// 'yellow'
+// document.body.firstElementChild.children[3].style.backgroundColor = "black"
+// 'black'
+// e[4].style.backgroundColor = "red"
+// 'red'
+// e[3].style.backgroundColor = "yellow"
+    </script>
+</body>
+</html>
