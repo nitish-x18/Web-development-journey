@@ -11,3 +11,11 @@ button = addEventListener("dblclick", ()=>{
 document.addEventListener("contextmenu", ()=>{
     alert("dont right clicked!!!")
 })
+
+document.addEventListener("keydown", (e)=>{
+    console.log(`you pressed ${e.key} key and key code is ${e.keyCode}`)
+})
+
+document.addEventListener("keydown", (e)=>{
+    console.log(e)
+})
