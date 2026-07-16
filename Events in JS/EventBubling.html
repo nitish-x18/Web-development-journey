@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Bublling</title>
     <style>
-        .child{
+        .child {
             background-color: rgb(172, 206, 236);
             margin: 15px;
             padding: 15px;
             cursor: pointer;
         }
 
-        .childcontainer{
+        .childcontainer {
             background-color: rgb(22, 132, 230);
             margin: 15px;
             padding: 15px;
         }
 
-        .container{
+        .container {
             background-color: rgb(2, 44, 81);
             margin: 15px;
             padding: 15px;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="childcontainer">
@@ -34,19 +36,42 @@
         </div>
     </div>
     <script>
-        document.querySelector(".child").addEventListener("click", ()=>{
+        document.querySelector(".child").addEventListener("click", () => {
             alert("child was clicked!!!")
         })
 
-        document.querySelector(".childcontainer").addEventListener("click", (e)=>{
+        document.querySelector(".childcontainer").addEventListener("click", (e) => {
             // e.stopPropagation
             ("childcontainer was clicked!!!")
         })
 
-        document.querySelector(".container").addEventListener("click", (e)=>{
+        document.querySelector(".container").addEventListener("click", (e) => {
             e.stopPropagation
             alert("container was clicked!!!")
         })
+
+        function random_color(){
+            let val2 = Math.ceil(0 + Math.random() * 255)
+            let val3 = Math.ceil(0 + Math.random() * 255)
+            let val1 = Math.ceil(0 + Math.random() * 255)
+            
+            return `rgb(${val1}, ${val2}, ${val3})`
+        }
+
+        let a = setInterval(() => {
+            document.querySelector(".childcontainer").style.background = random_color();
+        }, 1000)
+
+        console.log(a)
+
+        setTimeout(() => {
+            document.querySelector(".container").style.background = "pink";
+        }, 3000);
+
+        // clearInterval(a)
+        // clearTimeout()
+        // if we want clean the interval or timeout then we use this functions
     </script>
 </body>
+
 </html>
