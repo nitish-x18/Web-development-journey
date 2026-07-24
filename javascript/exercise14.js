@@ -1,8 +1,17 @@
+// const additem = async (item) => {
+//     await randomdelay();
+//     let div = document.createElement('div')
+//     div.innerHTML = item;
+//     document.body.append(div)
+// }
+
 const additem = async (item) => {
     await randomdelay();
-    let div = document.createElement('div')
+
+    let div = document.createElement("div");
     div.innerHTML = item;
-    document.body.append(div)
+
+    document.querySelector(".box").append(div);
 }
 
 const randomdelay = () => {
@@ -14,9 +23,20 @@ const randomdelay = () => {
     })
 }
 
-let text = ["Initilizing Hacking...", "Reading password...", "Password File Detect...", "Sending all personal file to the server...", "Cleaning up..."]
+let text = ["Initilizing Hacking", "Reading password", "Password File Detect", "Sending all personal file to the server", "Cleaning up"]
 
 async function start() {
+
+    setInterval(()=>{
+        // let last = document.body.lastElementChild;
+        let last = document.querySelector(".box").lastElementChild;
+        if(last.innerHTML.endsWith("...")){
+            last.innerHTML = last.innerHTML.slice(0, last.innerHTML.length-3)
+        } else{
+            last.innerHTML = last.innerHTML + "."
+        }
+    }, 1000)
+
     for (const item of text) {
         await additem(item);
     }
