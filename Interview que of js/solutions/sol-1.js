@@ -145,10 +145,11 @@ async function asynchronous(arrr) {
             }, 500);
         });
         promise.push(p);
-
     }
-
     return promise;
 }
 
 console.log(asynchronous(arrr));
+
+// 9. The Asynchronous Shopper:
+//    Imagine you are building an online shopping application. Write an asynchronous function called placeOrder that simulates placing an order and returns a promise. The promise should resolve with an order confirmation message after a random delay.
