@@ -42,7 +42,7 @@ app.use('/shop', shop)
 
 app.get('/', (req, res) => {
     console.log("Hey its a get request")
-    res.send('Hello World21!')
+    res.send('Hello World!!!')
 }).post('/', (req, res) => {
     console.log("Hey its a post request")
     res.send('Hello World post!')
